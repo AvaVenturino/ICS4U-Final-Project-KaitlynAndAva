@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 
-# Created by: Ava Venturino
+# Created by: Ava V and Kaitlyn I
 # Created on: Mar 2023
-# This program is the "space alien" game on pybadge
+# This program is the "gamename" game on pybadge
 
 
 import stage
