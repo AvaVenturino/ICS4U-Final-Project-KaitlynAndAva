@@ -17,12 +17,12 @@ def game_scene():
 
 
    print("\n\n\n") # 3 blank lines
-   print("Hello, World")
+   print("Mr Coxall")
 
 
    #repeat forever, game loop
    while True:
-       pass # just a placeholder for now
+      pass # just a placeholder for now
 
 
 
