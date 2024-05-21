@@ -17,7 +17,7 @@ def game_scene():
 
 
    print("\n\n\n") # 3 blank lines
-   print("Mr Coxall")
+   print("Hello, World!")
 
 
    #repeat forever, game loop
