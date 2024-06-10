@@ -1,31 +1,34 @@
 #!/usr/bin/env python3
 
+# Created by: Kaitlyn I and Ava V
+# Created on: June 2024
+# This constants file is for Space Alien game
 
-# Created by: Ava V and Kaitlyn I
-# Created on: Mar 2023
-# This program is the "space alien" game on pybadge
-
-
-import stage
-import ugame
-import random
 import time
+import random
+import stage
 import supervisor
-
-
+import ugame
 import constants
 
-import pygame
-from splash_scene import SplashScene
-from game_over_scene import GameOverScene
-from menu_scene import MenuScene
-from game_scene import GameScene
+from scenes import SplashScene, MenuScene, GameScene, GameOverScene
 
-splash_scene = SplashScene()
-game_over_scene = GameOverScene()
-menu_scene = MenuScene()
-game_scene = GameScene()
+class SpaceAliensGame:
+    def __init__(self):
+        self.sound = ugame.audio
 
+    def splash_scene(self):
+        scene = SplashScene(self)
+        scene.run()
 
-if __name__ == "__main__":
-   splash_scene()
+    def menu_scene(self):
+        scene = MenuScene(self)
+        scene.run()
+
+    def game_scene(self):
+        scene = GameScene(self)
+        scene.run()
+
+    def game_over_scene(self, score):
+        scene = GameOverScene(self, score)
+        scene.run()
