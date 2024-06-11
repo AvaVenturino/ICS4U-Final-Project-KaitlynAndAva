@@ -16,7 +16,6 @@ import constants
 class game_scene():
    # this function is the main game game_scene
 
-
    alien_count = 0
    # for score
    score = 0
@@ -75,13 +74,11 @@ class game_scene():
          background.tile(x_location, y_location, tile_picked)
 
 
+
    # a sprite that will be updated every frame
    ship = stage.Sprite(
       image_bank_sprites, 5, 75, constants.SCREEN_Y - (2 * constants.SPRITE_SIZE)
    )
-
-
-
 
    alien = stage.Sprite(
       image_bank_sprites,
@@ -90,6 +87,7 @@ class game_scene():
       16,
    )
 
+class xy_location():
 
    # create list of lasers for when we shoot
    aliens = []
@@ -101,7 +99,6 @@ class game_scene():
    # place 1 alien on the screen
    show_aliens()
 
-
    # create list of lasers for when we shoot
    lasers = []
    for laser_number in range(constants.TOTAL_NUMBER_OF_LASERS):
@@ -109,8 +106,6 @@ class game_scene():
          image_bank_sprites, 10, constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y
       )
       lasers.append(a_single_laser)
-
-
 
 
    # create a stage for the background to show up on
@@ -157,7 +152,7 @@ class game_scene():
          else:
                ship.move(0, ship.y)
 
-
+class laser_location():
       # update game logic
       # play sound if A was just button_just_pressed
       if a_button == constants.button_state["button_just_pressed"]:
@@ -174,7 +169,7 @@ class game_scene():
                if lasers[laser_number].y < constants.OFF_TOP_SCREEN:
                   lasers[laser_number].move(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
 
-
+class alien_location():
       # each frame move the aliens down, that are on screen
       for alien_number in range(len(aliens)):
          if aliens[alien_number].x > 0:
