@@ -2,7 +2,33 @@
 
 # Created by: Kaitlyn I and Ava V
 # Created on: June 2024
-# This program is the "Space Aliens" program on the PyBadge
+# This constants file is for Space Alien game
+
+import time
+import random
+import stage
+import supervisor
+import ugame
+import constants
+
+from scenes import SplashScene, MenuScene, GameScene, GameOverScene
+
+    def splash_scene(self):
+        scene = SplashScene(self)
+        scene.run()
+
+
+    def menu_scene(self):
+        scene = MenuScene(self)
+        scene.run()
+
+    def game_scene(self):
+        scene = GameScene(self)
+        scene.run()
+
+    def game_over_scene(self, score):
+        scene = GameOverScene(self, score)
+        scene.run()
 
 if __name__ == "__main__":
-    code.splash_scene()
+    code.splash_scene()        

@@ -18,8 +18,8 @@ class game_scene():
 
 
    alien_count = 0
-   # fr score
-   scoe = 0
+   # for score
+   score = 0
 
 
    score_text = stage.Text(width=29, height=14, font=None, palette=constants.RED_PALETTE, buffer=None)
@@ -43,23 +43,23 @@ class game_scene():
               break
 
 
-   # iage banks for CircuitPython
-   imae_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
-   imae_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
+   # image banks for CircuitPython
+   image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
+   image_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
 
 
-   # bttons that you want to keep state information on
-   a_btton = constants.button_state["button_up"]
-   b_btton = constants.button_state["button_up"]
-   stat_button = constants.button_state["button_up"]
-   selct_button = constants.button_state["button_up"]
+   # buttons that you want to keep state information on
+   a_button = constants.button_state["button_up"]
+   b_button = constants.button_state["button_up"]
+   state_button = constants.button_state["button_up"]
+   select_button = constants.button_state["button_up"]
 
 
 
 
    # gt sound ready
    pewsound = open("pew.wav", "rb")
-   boo_sound = open("boom.wav", "rb")
+   boom_sound = open("boom.wav", "rb")
    crash_sound = open("crash.wav", "rb")
    sound = ugame.audio
    sound.stop()

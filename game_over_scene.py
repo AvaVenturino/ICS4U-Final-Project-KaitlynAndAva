@@ -10,11 +10,6 @@ import time
 import supervisor
 import constants
 
-class SpaceAlienGame:
-    def __init__(self):
-        # Initialize game properties if needed
-        pass
-
     def game_over_scene(self, final_score):
         # This function is the game over scene
 
