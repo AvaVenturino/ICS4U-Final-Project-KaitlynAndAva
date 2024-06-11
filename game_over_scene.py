@@ -23,7 +23,7 @@ class SpaceAlienGame:
         sound.stop()
 
         # Image banks for CircuitPython
-        image_bank_2 = stage.Bank.from_bmp16("assets/mt_game_studio.bmp")
+        image_bank_2 = stage.Bank.from_bmp16("mt_game_studio.bmp")
 
         # Set the background to image 0 in the image bank
         background = stage.Grid(image_bank_2, constants.SCREEN_GRID_X, constants.SCREEN_GRID_Y)

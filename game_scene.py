@@ -44,8 +44,8 @@ class game_scene():
 
 
    # iage banks for CircuitPython
-   imae_bank_background = stage.Bank.from_bmp16("assets/space_aliens_background.bmp")
-   imae_bank_sprites = stage.Bank.from_bmp16("assets/space_aliens.bmp")
+   imae_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
+   imae_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
 
 
    # bttons that you want to keep state information on

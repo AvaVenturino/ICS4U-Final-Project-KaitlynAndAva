@@ -26,7 +26,7 @@ class splash_scene():
 
 
    # image banksfor CircuitPython
-   image_bank_mt_background = stage.Bank.from_bmp16("assets/mt_game_studio.bmp")
+   image_bank_mt_background = stage.Bank.from_bmp16("mt_game_studio.bmp")
 
 
    # sets the background to image 0 in the image bank
