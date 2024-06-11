@@ -5,7 +5,6 @@
 # This program is the "space alien" game on pybadge
 
 import stage
-import ugame
 import random
 import time
 import supervisor

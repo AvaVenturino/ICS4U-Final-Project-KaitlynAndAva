@@ -6,7 +6,6 @@
 # This program is the "space alien" game on pybadge
 
 import stage
-import ugame
 import random
 import time
 import supervisor
@@ -18,16 +17,16 @@ class game_scene():
    # this function is the main game game_scene
 
 
-   alin_count = 0
+   alien_count = 0
    # fr score
    scoe = 0
 
 
-   scoe_text = stage.Text(width=29, height=14, font=None, palette=constants.RED_PALETTE, buffer=None)
-   scoe_text.clear()
-   scoe_text.cursor(0,0)
-   scoe_text.move(1,1)
-   scoe_text.text("Score: {0}".format(score))
+   score_text = stage.Text(width=29, height=14, font=None, palette=constants.RED_PALETTE, buffer=None)
+   score_text.clear()
+   score_text.cursor(0,0)
+   score_text.move(1,1)
+   score_text.text("Score: {0}".format(score))
 
 
    class show_aliens():
