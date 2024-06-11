@@ -6,7 +6,6 @@
 # This program is the "space alien" game on pybadge
 
 import stage
-import ugame
 import random
 import time
 import supervisor
@@ -14,7 +13,7 @@ import supervisor
 
 import constants
 
-def splash_scene():
+class splash_scene():
    # this function is the menu scene
 
 

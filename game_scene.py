@@ -6,7 +6,6 @@
 # This program is the "space alien" game on pybadge
 
 import stage
-import ugame
 import random
 import time
 import supervisor
@@ -14,13 +13,13 @@ import supervisor
 
 import constants
 
-def game_scene():
+class game_scene():
    # this function is the main game game_scene
 
 
    alien_count = 0
-   # for score
-   score = 0
+   # fr score
+   scoe = 0
 
 
    score_text = stage.Text(width=29, height=14, font=None, palette=constants.RED_PALETTE, buffer=None)
@@ -30,37 +29,37 @@ def game_scene():
    score_text.text("Score: {0}".format(score))
 
 
-   def show_aliens():
-      # this function takes an alien from off screen and moves it on screen
-      for alien_number in range(len(aliens)):
-         if aliens[alien_number].x < 0:
-               aliens[alien_number].move(
-                  random.randint(
-                     0 + constants.SPRITE_SIZE,
-                     constants.SCREEN_X - constants.SPRITE_SIZE,
-                  ),
-                     constants.OFF_TOP_SCREEN,
-               )
-               break
+   class show_aliens():
+       this function takes an alien from off screen and moves it on screen
+      or alien_number in range(len(aliens)):
+        if aliens[alien_number].x < 0:
+              aliens[alien_number].move(
+                 random.randint(
+                    0 + constants.SPRITE_SIZE,
+                    constants.SCREEN_X - constants.SPRITE_SIZE,
+                 ),
+                    constants.OFF_TOP_SCREEN,
+              )
+              break
 
 
-   # image banks for CircuitPython
-   image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
-   image_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
+   # iage banks for CircuitPython
+   imae_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
+   imae_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
 
 
-   # buttons that you want to keep state information on
-   a_button = constants.button_state["button_up"]
-   b_button = constants.button_state["button_up"]
-   start_button = constants.button_state["button_up"]
-   select_button = constants.button_state["button_up"]
+   # bttons that you want to keep state information on
+   a_btton = constants.button_state["button_up"]
+   b_btton = constants.button_state["button_up"]
+   stat_button = constants.button_state["button_up"]
+   selct_button = constants.button_state["button_up"]
 
 
 
 
-   # get sound ready
-   pew_sound = open("pew.wav", "rb")
-   boom_sound = open("boom.wav", "rb")
+   # gt sound ready
+   pewsound = open("pew.wav", "rb")
+   boo_sound = open("boom.wav", "rb")
    crash_sound = open("crash.wav", "rb")
    sound = ugame.audio
    sound.stop()
