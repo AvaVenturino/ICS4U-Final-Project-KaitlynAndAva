@@ -17,9 +17,11 @@ class SpaceAliensGame:
     def __init__(self):
         self.sound = ugame.audio
 
+
     def splash_scene(self):
         scene = SplashScene(self)
         scene.run()
+
 
     def menu_scene(self):
         scene = MenuScene(self)
