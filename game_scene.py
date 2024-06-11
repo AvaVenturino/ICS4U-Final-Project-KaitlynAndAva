@@ -152,7 +152,7 @@ class xy_location():
          else:
                ship.move(0, ship.y)
 
-class laser_location():
+
       # update game logic
       # play sound if A was just button_just_pressed
       if a_button == constants.button_state["button_just_pressed"]:
@@ -169,7 +169,7 @@ class laser_location():
                if lasers[laser_number].y < constants.OFF_TOP_SCREEN:
                   lasers[laser_number].move(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
 
-class alien_location():
+class alien_location(): # NEW
       # each frame move the aliens down, that are on screen
       for alien_number in range(len(aliens)):
          if aliens[alien_number].x > 0:
@@ -185,10 +185,7 @@ class alien_location():
                   score_text.move(1,1)
                   score_text.text("Score: {0}".format(score))
 
-
-
-
-
+class laser_location(): # NEW
       # each frame check is any of the lasers are touching any of the aliens
       for laser_number in range(len(lasers)):
          if lasers[laser_number].x > 0:
