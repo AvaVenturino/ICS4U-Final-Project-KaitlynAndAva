@@ -20,9 +20,6 @@ class menu_scene():
    # image banksfor CircuitPython
    image_bank_mt_background = stage.Bank.from_bmp16("mt_game_studio.bmp")
 
-
-
-
    # add text objects
    text = []
    text1 = stage.Text(
@@ -41,8 +38,6 @@ class menu_scene():
    text2.move(40, 110)
    text2.text("PRESS START")
    text.append(text2)
-
-
 
 
    # sets the background to image 0 in the image bank
