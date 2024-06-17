@@ -4,6 +4,7 @@
 Created by: Kaitlyn I and Ava V
 Created on: June 2024
 This is the "Ship" class
+This is the SPACESHIP class, not aliens
 """
 
 from images import Images
