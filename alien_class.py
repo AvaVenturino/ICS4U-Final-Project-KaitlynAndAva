@@ -23,3 +23,9 @@ class Alien(Images):
 
     def warp_top(self) -> None:
         self.y_position = constants.OFF_TOP_SCREEN
+    
+    def is_laser_right_side(self) -> bool:
+        return self.x_position < 74
+
+    def is_laser_left_side(self) -> bool:
+        return self.x_position < 74

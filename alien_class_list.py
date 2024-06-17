@@ -29,7 +29,7 @@ class AlienList:
 
     def spawn_alien_right(self):
         for alien in self.aliens:
-            if not alien.is_alien_left_side():
+            if not alien.is_alien_right():
                 if alien.is_off_screen():
                     alien.x_position = constants.OFF_RIGHT_SCREEN
                     alien.y_position = random.randint(0, (constants.SCREEN_Y - constants.SPRITE_SIZE))
@@ -37,7 +37,7 @@ class AlienList:
 
     def spawn_alien_left(self):
         for alien in self.aliens:
-            if alien.is_alien_left_side():
+            if alien.is_alien_left():
                 if alien.is_off_screen():
                     alien.x_position = constants.OFF_LEFT_SCREEN
                     alien.y_position = random.randint(0, (constants.SCREEN_Y - constants.SPRITE_SIZE))

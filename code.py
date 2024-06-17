@@ -151,7 +151,7 @@ def game_scene():
         a_single_alien = stage.Sprite(image_bank_sprites, 8, constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
 
         aliens.append(a_single_alien)
-        a_alien_object = Alien(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y, "right")
+        a_alien_object = Alien(constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y)
         alien_objects.add_to_list(a_alien_object)
     
     # place 2 aliens on the screen
