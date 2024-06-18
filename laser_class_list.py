@@ -15,7 +15,7 @@ class LaserList:
         self.lasers = []
 
     def add_to_list(self, laser):
-        self.clasers.append(laser)
+        self.lasers.append(laser)
 
     def fire_laser(self, ship_x_pos: int, ship_y_pos: int, laser_direction: int):
         for laser in self.laser:
